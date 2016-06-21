@@ -9,7 +9,9 @@
 *
 * It should be a String.
 **/
-
+var firstName = "John";
+var lastName = "Doe";
+var birthPlace = "Hawaii";
 
 
 /**
@@ -21,7 +23,9 @@
 *
 * Their values should be a Number
 **/
-
+var favoriteNumber = 12;
+var currentYear = 2016;
+var thatOnePrinceSong = 1999;
 
 
 /**
@@ -33,7 +37,10 @@
 *
 * Their values should be a Boolean
 **/
-
+var isDaytime = true;
+var isLeftHanded = false;
+var inHawaii = true;
+var isHappyCoding = true;
 
 
 /**
@@ -44,7 +51,8 @@
 *
 * Their values should be a Null value
 **/
-
+var enrolledAtDevLeague = null;
+var completedFridayPrep = null;
 
 
 /**
@@ -55,7 +63,7 @@
 * This Array contains the names of all the states
 * which can be found along the west coast of The United States.
 **/
-
+var westCoast = ["Washington", "California", "Oregon"];
 
 
 /**
@@ -66,7 +74,7 @@
 * This Array contains numbers that are considered 'even values'.
 * Have at least ten even values in this array.
 **/
-
+var evenNumbers = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18];
 
 
 /**
@@ -79,7 +87,7 @@
 *
 * Extend this behavior to include subtraction, multiplication and division.
 */
-
+var sumOfNumbers = 5 + 4 + 2;
 
 
 
@@ -100,7 +108,13 @@
 *   See if you can come up with a few examples of double comparison
 *   operator(==) vs triple comparison operator(===).
 */
+var isEqual = "Tacocat" == "tacocat";
+//console.log(isEqual);
 
+var twentyNumber = 20;
+var twentyString = "20";
+//console.log(twentyNumber == twentyString);
+//console.log(twentyNumber === twentyString);
 
 
 /**
@@ -118,7 +132,16 @@
 *   The tests for this section cannot test your variable as it changes,
 *   it can only test that you declared the variable by giving it the right name.
 */
-
+var generalContainer = "random test";
+//console.log(generalContainer);
+generalContainer = true;
+//console.log(generalContainer);
+generalContainer = 5;
+//console.log(generalContainer);
+generalContainer = null;
+//console.log(generalContainer);
+generalContainer = [3, "asdf", false, null];
+//console.log(generalContainer);
 
 
 /**
@@ -132,7 +155,10 @@
 *
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
-
+function jump(height) {
+	return "You jumped " + height + " feet high!";
+}
+var jumpResult = jump(9);
 
 
 /**
@@ -144,4 +170,6 @@
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
-
+function cook(ingredient1, ingredient2, recipeName) {
+	return ingredient1 + " and " + ingredient2 + " make a " + recipeName + "!";
+}
